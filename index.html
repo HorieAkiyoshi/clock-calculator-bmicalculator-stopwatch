@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Projects | Clock, Calculator and Stopwatch</title>
+</head>
+<body>
+    <div class="container">
+			<header>
+				<div class="logo">
+					<h1>Welcome to my projects</h1>
+				</div>
+
+				<div class="clock-box">
+					<div class="box">
+						<span>Hours</span>
+						<span id="hours"></span>
+					</div>
+					<div class="box">
+						<span>Minuts</span>
+						<span id="minutes"></span>
+					</div>
+					<div class="box">
+						<span>Seconds</span>
+						<span id="seconds"></span>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="section1">
+					<div class="part-calculator">
+						<div class="calculator-box">
+							<h3>Calculator</h3>
+							<input class="display" id="display" type="text" disabled>
+							<div class="calculator-btn">
+								<button onclick="calculatorClean()">C</button>
+								<button onclick="calculatorBack()">&lt;</button>
+								<button onclick="insertoToDisplay('/')">/</button>
+								<button onclick="insertoToDisplay('*')">*</button>
+								<button onclick="insertoToDisplay('7')">7</button>
+								<button onclick="insertoToDisplay('8')">8</button>
+								<button onclick="insertoToDisplay('9')">9</button>
+								<button onclick="insertoToDisplay('-')">-</button>
+								<button onclick="insertoToDisplay('4')">4</button>
+								<button onclick="insertoToDisplay('5')">5</button>
+								<button onclick="insertoToDisplay('6')">6</button>
+								<button onclick="insertoToDisplay('+')">+</button>
+								<button onclick="insertoToDisplay('1')">1</button>
+								<button onclick="insertoToDisplay('2')">2</button>
+								<button onclick="insertoToDisplay('3')">3</button>
+								<button onclick="insertoToDisplay('0')" class="btn-0">0</button>
+								<button onclick="insertoToDisplay('.')">.</button>
+								<button onclick="calculatorResult()" class="btn-result">=</button>
+							</div>
+						</div>
+					</div>
+
+          <div class="part-bmi">
+            <section id="calculator">
+              <form id="form">
+                <h1 id="title">
+                  BMI - Calculator
+                </h1>
+  
+                <div class="input-box">
+                  <label for="weight">
+                    Weight
+                  </label>
+
+                  <div class="input-field">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="number" id="weight" required>
+                    <span>Kg</span>
+                  </div>
+                </div>
+  
+                  <div class="input-box">
+                    <label for="height">
+                      Height
+                    </label>
+
+                    <div class="input-field">
+                      <i class="fa-solid fa-ruler"></i>
+                      <input type="number" id="height" required>
+                      <span>cm</span>
+                    </div>
+                  </div>
+  
+                  <button id="calculate">Calculate</button>
+              </form>
+  
+              <div id="infos" class="hidden">
+                <div id="result">
+                  <div id="bmi">
+                      <span id="value"></span>
+                      <span>BMI</span>
+                  </div>
+                  <div id="description"></div>
+                </div>
+                <div id="more_info">
+                  <a href="https://jovempan.com.br/entretenimento/famosos/gaby-amarantos-detalha-como-perdeu-14kg-com-dieta-quero-seguir-forte-e-saudavel.html" target="_blank">More information about your BMI <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+          </section>
+          </div>
+
+					<div class="part-stopwatch">
+            <div id="stopwatch">
+              <h2 id="timer">00:00:00:00</h2>
+
+              <div id="actions">
+                <button id="reset">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button id="power" action="start">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="mark">
+                  <i class="fa-solid fa-flag"></i>
+                </button>
+              </div>
+
+              <div id="marks-list">
+              </div>
+            </div>
+					</div>
+
+          
+				</section>
+			</main>
+		</div>
+
+		<script src="./js/index.js"></script>
+</body>
+</html>
