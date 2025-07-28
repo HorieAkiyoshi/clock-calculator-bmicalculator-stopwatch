@@ -349,6 +349,75 @@ main{
         gap: 20px;
         margin-bottom: 40px;
     }
+
+    .part-calculator{
+        width: 100%;
+    }
+
+    .calculator-box{
+        width: 55%;
+    }
+
+    .part-bmi{
+        width: 100%;
+    }
+
+    #calculator{
+        width: 55%;
+    }
+
+    .part-stopwatch{
+        width: 100%;
+    }
+
+    #stopwatch{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 55%;
+    }
+
+    #actions button{
+        display: inline-block;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 706px){
+    .part-calculator{
+        width: 100%;
+    }
+
+    .calculator-box{
+        width: 80%;
+    }
+
+    .part-bmi{
+        width: 100%;
+    }
+
+    #calculator{
+        width: 80%;
+    }
+
+    .part-stopwatch{
+        width: 100%;
+    }
+
+    #stopwatch{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    #actions button{
+        display: inline-block;
+        width: 57px;
+    }
 }
 
 @media screen and (max-width: 434px){
